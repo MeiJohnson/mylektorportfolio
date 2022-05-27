@@ -11,7 +11,9 @@ a:hover {
     color: #33bbdf;
 }
 
-header, footer, div.page {
+header,
+footer,
+div.page {
     width: 760px;
     margin: 0 auto;
     background: #daeef3;
@@ -39,4 +41,8 @@ header nav ul li {
 
 div.page {
     background: #f1fbfe;
+}
+
+.row-custom {
+    margin-bottom: 100px;
 }

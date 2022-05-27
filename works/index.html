@@ -7,11 +7,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400" rel="stylesheet" />
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@700&display=swap" rel="stylesheet">
     <link rel="stylsheet" href="src/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <title>Веб-портфолио Царулковой Анастасии</title>
 </head>
 
@@ -69,23 +71,1625 @@ line-height: 1.42857; text-align: center;">
         </div>
 
         <div style="padding: 50px 0; box-sizing: border-box;">
-            <div class="container" id="down">
-                <div class="row">
-                    <div class="col-6">
-                        <div class="text-center">
-                            <ul class="list-group list-group-flush">
-                                <li class="list-group-item">
-                                    <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
-                                        <div class="card-header">Лабораторная работа №2</div>
-                                        <div class="card-body">
-                                            <h5 class="card-title">Программирование, 6 семестр</h5>
-                                            <p class="card-text">Работа с математическими пакетами и csv-файлами</p>
-                                            <a href="https://repl.it/@AnastasiaTs/my-sem6-t1-lr1" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+            <!-- <div class="content-list">
+                <h1>Содержание</h1>
+                <ol class="list-group list-group-flush">
+                    <li class="list-group-item">
+                        <a style="text-decoration:none;" href="#1-kurs-1-sem">1 курс</a>
+                        <ol class="list-group">
+                            <li class="list-group-item">
+                                <a style="text-decoration:none;" href="#math-1">Математика</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="list-group-item">
+                        <a style="text-decoration:none;" href="#2-kurs-1-sem">2 курс</a>
+                        <ol class="list-group">
+                            <li class="list-group-item">
+                                <a style="text-decoration:none;" href="#buisness-inform">Бизнес-информатика</a>
+                            </li>
+                        </ol>
+                    </li>
+                    <li class="list-group-item">
+                        <a style="text-decoration:none;" href="#3-kurs-1-sem">3 курс</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a style="text-decoration:none;" href="#4-kurs-1-sem">4 курс</a>
+                    </li>
+                </ol>
+                <hr>
+            </div> -->
+            <div class="container">
+                <div class="col-lg">
+                    <div class="accordion" id="accordionExample">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    1 курс
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="accordion" id="accordionExample2">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingOne2">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                                              1 семестр
+                                            </button>
+                                            </h2>
+                                            <div id="collapseOne2" class="accordion-collapse collapse" aria-labelledby="headingOne2" data-bs-parent="#accordionExample2">
+                                                <div class="accordion-body">
+                                                    <div id="1-kurs-1-sem">
+                                                        <div class="accordion" id="accordionIT">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingIT">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIT" aria-expanded="true" aria-controls="collapseIT">
+                                                                    Информационные технологии
+                                                                </button>
+                                                                </h2>
+                                                                <div id="collapseIT" class="accordion-collapse collapse" aria-labelledby="headingIT" data-bs-parent="#accordionIT">
+                                                                    <div class="accordion-body">
+                                                                        <div class="container" id="down">
+                                                                            <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Доклад</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">История PowerPoint</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1jyiJHFEFBRDku6o8IzB7GJisPS9ymlTo?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №1</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Аннотированный список онлайн графических редакторов</h5>
+                                                                                            <a href="https://docs.google.com/document/d/1-jQFR39cxIbU29UPI4baCvuvE6D2ygSdxkLWUnJIvLg/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №1.5</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Сравнительная таблица облачных сервисов</h5>
+                                                                                            <a href="https://docs.google.com/document/d/14ZzdjViapYAO56gtVkXvx-uUeTumhnBBQYvECuNtxKA/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №2.1</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Работа в Gimp</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1K35sLj_IDhBiMogFbnIsmaVNyhmEVV2m?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row row-cols-4">
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №2.2</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Анимация</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/19vugNutJagBJiTe87DjtnRdF151dG_mH?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №3</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Prezi</h5>
+                                                                                            <p class="card-text text-start">Алгоритмы работы при решении задач с выражениями и уравнениями</p>
+                                                                                            <a href="https://prezi.com/view/3qudUT9u95OB6gsHG0Lu/" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №4</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Html страница</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1DAtBuaFh1qy9lkgCT-AhbU3R044xfzIO?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion" id="accordionIVT">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingIVT">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIVT" aria-expanded="true" aria-controls="collapseIVT">
+                                                                    ИВТ
+                                                                </button>
+                                                                </h2>
+                                                                <div id="collapseIVT" class="accordion-collapse collapse" aria-labelledby="headingIVT" data-bs-parent="#accordionIVT">
+                                                                    <div class="accordion-body">
+                                                                        <div class="container" id="down">
+                                                                            <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №1</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Линейные вычислительные процессы (ЛВП)</h5>
+                                                                                            <a href="https://docs.google.com/document/d/1srkBsVru_y0AHsj1vbfJ0sZHHiH-Xo7qTmjnVx1OPAE/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №2</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">ДЦВП</h5>
+                                                                                            <a href="https://docs.google.com/document/d/1Ax2Kd4EYz3YXG5xzx9_fpZjD8Zv12rW1QycWk-yMOK4/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №3</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">ДЦВП с управлением по аргументу</h5>
+                                                                                            <p class="card-text">Численное интегрирование.</p>
+                                                                                            <a href="https://docs.google.com/document/d/1bVHAZ0gqT6ws7pt5d0qDIb1Eza433oA9YgoDdZtBVug/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №4</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">ДЦВП с управлением по аргументу</h5>
+                                                                                            <p class="card-text">Численное интегрирование c использованием функции пользователя.</p>
+                                                                                            <a href="https://docs.google.com/document/d/1kXv02E-urpDcXszsR17mESbKgxvjfztr/edit?usp=sharing&ouid=109133832173121499534&rtpof=true&sd=true" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №5</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Процедуры и функции</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1yy9xrCCHI3dL97GvxPCGFxiRJyUhbqkH?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №6</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">ДЦВП с управлением по индексу</h5>
+                                                                                            <p class="card-text text-start">Одномерные массивы.</p>
+                                                                                            <a href="https://drive.google.com/drive/folders/1wwnamu41H2wanuW9huOIsDPI4c45bSJS?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №7</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">ИЦВП с управлением по функции</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1VkVUI6o3A0mz5d0tzN2YpQbvlGBD2cMK?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №8</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">ИЦВП с управлением по индексу/аргументу и функции</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1F1Imf4hGjIBtS1DgGK5TurEhnYr5v5mW?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №9</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Разветвляющиеся вычислительные процессы. Оператор выбора</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1G3N7l5S-RlaqvObYxs-6U9evmuJsFRqf?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №10</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">ИЦВП с управлением по индексу и функции</h5>
+                                                                                            <p class="card-text text-start">Вариационный ряд.</p>
+                                                                                            <a href="https://drive.google.com/drive/folders/1cybt0jkchtt7ojbWaKEmGFT2dOubYGKH?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №11</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Комбинированные вычислительные процессы</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1Oe-tPQMVp8I7MN5K85UI5juN4RjhjOmT?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №12</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Многоступенчатые ЦВП</h5>
+                                                                                            <p class="card-text text-start">Двумерные массивы.</p>
+                                                                                            <a href="https://drive.google.com/drive/folders/1qR_tZKfuJhSSQLeW3dw24E1nGhXXgTJK?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion" id="accordionITphysics">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingITphysics">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseITphysics" aria-expanded="true" aria-controls="collapseITphysics">
+                                                                    ИТ в физике
+                                                                </button>
+                                                                </h2>
+                                                                <div id="collapseITphysics" class="accordion-collapse collapse" aria-labelledby="headingITphysics" data-bs-parent="#accordionITphysics">
+                                                                    <div class="accordion-body">
+                                                                        <div class="container" id="down">
+                                                                            <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №1</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Траектория движения Нептуна</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1Sy2vaB7g1k3dQeiLCKqmUxKrbWlmwfyA?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №2</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Траектория полёта</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1tB-EQTpwpdoOzU923Oi2wj6YcT_8LaBi?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №3</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Зависимость заряда конденсатора от времени</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1cn6rXqaSB0jZBX_eId8Bra26N-Fsfm9y?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №4</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Механические колебания</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/14DhOEyu3xtE_mDXydeIBpr4gXZYRPrsf?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row row-cols-4">
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №5</div>
+                                                                                        <div class="card-body">
+                                                                                            <p class="card-text text-start">Исследование зависимостей напряжения, полной мощности, полезной мощности и КПД от силы тока.</p>
+                                                                                            <a href="https://drive.google.com/drive/folders/1TqsmcbXxRiJygrebtX1daJyGBqOWLMyb?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Лабораторная работа №6</div>
+                                                                                        <div class="card-body">
+                                                                                            <p class="card-text text-start">Исследование зависимости давления газа от высоты в однородном поле тяжести</p>
+                                                                                            <a href="https://drive.google.com/drive/folders/18wNX5SrjnIF4iERaIeEk_QlpocpFSerc?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Самостоятельная работа</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Возможности Wolfram Alpha</h5>
+                                                                                            <a href="https://prezi.com/view/OSSgeGDib4660ZxeeGQg/" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Самостоятельная работа №2</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Обзор возможностей LabVIEW</h5>
+                                                                                            <a href="https://docs.google.com/presentation/d/171hLsPCYFQV2-MYqugRxMuA4A6nU8OU2JOis8_CdY14/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Самостоятельная работа №3</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Фигуры Лиссажу</h5>
+                                                                                            <a href="https://docs.google.com/spreadsheets/d/1k-LXKDCVcZcD8jwwR1-Nkc-QIhikWI_MKMJCOdTKOp0/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Графические способы решения задач</div>
+                                                                                        <div class="card-body">
+                                                                                            <a href="https://docs.google.com/spreadsheets/d/1-vAC2ZbCKYdHyFTDKk_2kLB9TtvmSLeA/edit?usp=sharing&ouid=109133832173121499534&rtpof=true&sd=true" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion" id="accordionITmath">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingITmath">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseITmath" aria-expanded="true" aria-controls="collapseITmath">
+                                                                    ИТ в математике
+                                                                </button>
+                                                                </h2>
+                                                                <div id="collapseITmath" class="accordion-collapse collapse" aria-labelledby="headingITmath" data-bs-parent="#accordionITmath">
+                                                                    <div class="accordion-body">
+                                                                        <div class="container" id="down">
+                                                                            <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Тема №1</div>
+                                                                                        <div class="card-body">
+                                                                                            <p class="card-text text-start">Список онлайн-сервисов для решения математических задач.</p>
+                                                                                            <a href="https://drive.google.com/drive/folders/1ovRK62ppIdhO1T_w7vfZk1R68bFzDHm5?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Тема №2</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Создание графиков Excel</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/11YthFN7_GVWwhhK-xw4dlIZThdk_i4eP?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Тема №3</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Maxima</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1v6Prq-Thk-5AVMvbvRkVKX_evxHFhEVX?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Тема №4</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Maxima. Приведение матриц к ступенчатому виду</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1XHTUnNjkyTy83gUBeRpS63aIRGezfA37?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+
+                                                                            <div class="row row-cols-4">
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Тема №5</div>
+                                                                                        <div class="card-body">
+                                                                                            <p class="card-text text-start">Maxima. Работа с уравнениями</p>
+                                                                                            <a href="https://drive.google.com/drive/folders/10j-1akyfXNtfCffi2TappzGBJXbBG-b0?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Тема №6</div>
+                                                                                        <div class="card-body">
+                                                                                            <p class="card-text text-start">Maxima. Пределы,производные, интегралы</p>
+                                                                                            <a href="https://drive.google.com/drive/folders/1kZpLebn1jG5dSOd0C2mTk6xEgausI8Oz?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion" id="accordionMath1">
+                                                            <div class="accordion-item">
+                                                                <h2 class="accordion-header" id="headingMath1">
+                                                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMath1" aria-expanded="true" aria-controls="collapseMath1">
+                                                                        Математика
+                                                                    </button>
+                                                                </h2>
+                                                                <div id="collapseMath1" class="accordion-collapse collapse" aria-labelledby="headingMath1" data-bs-parent="#accordionMath1">
+                                                                    <div class="accordion-body">
+                                                                        <div class="container" id="down">
+                                                                            <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Домашнее задание</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Обратные уравнения</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1voFqgTy6BPB_ThNdLLZpnEHf7X1ajR0m?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Домашнее задание</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Матричные уравнения</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1jvJ8Cj5RegAAZ3otcx6kyVvmfE1I4-XO?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                                <div class="col">
+                                                                                    <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                        <div class="card-header">Домашнее задание</div>
+                                                                                        <div class="card-body">
+                                                                                            <h5 class="card-title">Ранги матриц</h5>
+                                                                                            <a href="https://drive.google.com/drive/folders/1tn0fw1ndv-_tYWtfw9HYp7EAOQeCDghR?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
-                                </li>
 
-                            </ul>
+                                    <div class="accordion" id="accordionSem2">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="headingSem2">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSem2" aria-expanded="false" aria-controls="collapseSem2">
+                                                  2 семестр
+                                                </button>
+                                            </h2>
+                                            <div id="collapseSem2" class="accordion-collapse collapse" aria-labelledby="headingSem2" data-bs-parent="#accordionSem2">
+                                                <div class="accordion-body">
+                                                    <div class="accordion" id="accordionIT2">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingIT2">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseIT2" aria-expanded="false" aria-controls="collapseIT2">
+                                                                Информационные технологии
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseIT2" class="accordion-collapse collapse" aria-labelledby="headingIT2" data-bs-parent="#accordionIT2">
+                                                                <div class="accordion-body">
+                                                                    <div class="container" id="down">
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Доклад про Телеграм</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://drive.google.com/drive/folders/1i2rR88vLF3XmxuC2b1PThaieZaWfxUQF?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №6</div>
+                                                                                    <div class="card-body">
+                                                                                        <p class="card-text text-start">Журнал успеваемости</p>
+                                                                                        <a href="https://docs.google.com/spreadsheets/d/1EB2HaHAViItXlw7uHEv0UqGRW2vUbqkB/edit?usp=sharing&ouid=109133832173121499534&rtpof=true&sd=true" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №6</div>
+                                                                                    <div class="card-body">
+                                                                                        <p class="card-text text-start">Audio</p>
+                                                                                        <a href="https://drive.google.com/file/d/1ZI5FCt90R-yySR-OKUfe26AH1GF4Ef9G/view?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №7</div>
+                                                                                    <div class="card-body">
+                                                                                        <p class="card-text text-start">ITерритория</p>
+                                                                                        <a href="https://drive.google.com/drive/folders/1MZueR1BY_Ko2bZbXAzFs5r4oKZsNh4rh?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">ShowerJS</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://drive.google.com/drive/folders/1Wi2N-B8zkHKHWglT5_EkXm4DW067BVWX?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion" id="accordionEVM">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingEVM">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEVM" aria-expanded="false" aria-controls="collapseEVM">
+                                                               ЭВМ
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseEVM" class="accordion-collapse collapse" aria-labelledby="headingEVM" data-bs-parent="#accordionEVM">
+                                                                <div class="accordion-body">
+                                                                    <div class="container" id="down">
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №1</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://docs.google.com/document/d/155VUjK5CUCZdR-B-ywDHFcvrt51_xXhz_xy69EYTFvw/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №2</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://docs.google.com/document/d/1SUDS5e46NM9j7pvS6-QZM7_WjtXUAJioP26VDJ4aPW0/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №3</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://docs.google.com/document/d/1a2IIHXPDARkH_XNRAUGcqpGZkF5S5w9Z1CmiFSdr-FM/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Тесты</div>
+                                                                                    <div class="card-body">
+
+                                                                                        <a href="https://docs.google.com/document/d/1hIVNIEAUZ3d1DrYBjaS-Z6sSAM882ueDBSIJmXkdedI/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Статья ЭВМ</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://docs.google.com/document/d/1XRifI7-GosiXeI-i_-WDTY-VNtA2KAkzvn528lWKTKU/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion" id="accordionProgC">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingProgC">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProgC" aria-expanded="false" aria-controls="collapseProgC">
+                                                               Программирование
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseProgC" class="accordion-collapse collapse" aria-labelledby="headingProgC" data-bs-parent="#accordionProgC">
+                                                                <div class="accordion-body">
+                                                                    <div class="container" id="down">
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Работы за 2 семестр</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://drive.google.com/drive/folders/1y_xPjrWBLqzLK07KV2CbbqtXH3aUBkoV?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion" id="accordionMath2">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingMath2">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMath2" aria-expanded="false" aria-controls="collapseMath2">
+                                                               Математика
+                                                              </button>
+                                                            </h2>
+                                                            <div id="collapseMath2" class="accordion-collapse collapse" aria-labelledby="headingMath2" data-bs-parent="#accordionMath2">
+                                                                <div class="accordion-body">
+                                                                    <div class="container" id="down">
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Функции и пределы ч.1</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://drive.google.com/drive/folders/1fqj8U3AphDrO4keuTAlOa2F0u2Jggr2u?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Функции и пределы ч.2</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://drive.google.com/drive/folders/17aBPQ1u1ApK4SOru0fN0dP9cJyGVWDI8?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Функции и пределы ч.3</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://drive.google.com/drive/folders/1UpoiASaAzXR09kz6CyO6UYWnRrpy-4BX?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Функции и пределы ч.4</div>
+                                                                                    <div class="card-body">
+
+                                                                                        <a href="https://drive.google.com/drive/folders/1nvhMKxWRfW4qVZ2W99qsg-jEI_cq7wWH?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">СЛАУ</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://drive.google.com/drive/folders/1Ecxwg9ehgNzvs6ntPuKdEJUS-qBdPhbu?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading2kurs">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2kurs" aria-expanded="false" aria-controls="collapse2kurs">
+                                2 курс
+                              </button>
+                            </h2>
+                            <div id="collapse2kurs" class="accordion-collapse collapse" aria-labelledby="heading2kurs" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                    <div class="accordion" id="accordion2kursSem1">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading2kursSem1">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2kursSem1" aria-expanded="false" aria-controls="collapse2kursSem1">
+                                              1 семестр
+                                            </button>
+                                            </h2>
+                                            <div id="collapse2kursSem1" class="accordion-collapse collapse" aria-labelledby="headingSem1" data-bs-parent="#accordion2kursSem1">
+                                                <div class="accordion-body">
+
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingVichMath">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVichMath" aria-expanded="false" aria-controls="collapseVichMath">
+                                                                Вычислительная математика
+                                                              </button>
+                                                        </h2>
+                                                        <div id="collapseVichMath" class="accordion-collapse collapse" aria-labelledby="headingVichMath" data-bs-parent="#accordion2kursSem2">
+                                                            <div class="accordion-body">
+                                                                <div class="container" id="down">
+                                                                    <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №1</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Кратные интегралы. Численное интегрирование</h5>
+                                                                                    <a href="https://drive.google.com/drive/folders/165j-PkRmKujy6vqHQqQGrGWldxvQyXF3?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №4</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Дифференциальные уравнения</h5>
+                                                                                    <a href="https://drive.google.com/drive/folders/1Knldd-JpGv8gdO-39xM8kHZfQv_pYXBP?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №5</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Элементарные функции</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1AQHjdM7nyTDR2AO70qi9ATS6h_MctjRu88Bh-j7tgoA/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №6</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Нелинейные уравнения</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1gDr_Bul23IGHm_elZOp51aGeoZNkizw-lKLqAZ29HKA/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingAnDan">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAnDan" aria-expanded="false" aria-controls="collapseAnDan">
+                                                                Анализ данных
+                                                              </button>
+                                                        </h2>
+                                                        <div id="collapseAnDan" class="accordion-collapse collapse" aria-labelledby="headingAnDan" data-bs-parent="#accordion2kursSem2">
+                                                            <div class="accordion-body">
+                                                                <div class="container" id="down">
+                                                                    <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №1</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Погрешности</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1x2CVJ1wh5zeevSqzO1UYeNZPrFEGpw_KVZx-5vMFptg/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №2</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Числовые характеристики ДСВ</h5>
+                                                                                    <a href="https://drive.google.com/drive/folders/1soJveGlobAgkKcjxHfzsw35l0vcacl3D?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №3</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Числовые характеристики НСВ</h5>
+                                                                                    <a href="https://drive.google.com/drive/folders/15HhrxriKy280MGDqSjatcW0cTPMY7TDb?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №4</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Задачи по вариационным рядам</h5>
+                                                                                    <a href="https://drive.google.com/drive/folders/1Jq7DzegYfGvTT1dDpqJvBdRO8rLkHJUt?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №5</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Средние величины</h5>
+                                                                                    <a href="https://drive.google.com/drive/folders/1lKX0_dke_z0KBKIfOG4CG3y8-YL0JQty?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №6</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Показатели вариации</h5>
+
+                                                                                    <a href="https://docs.google.com/spreadsheets/d/1m9dcAspq4rsJgxR04jn99piM9bZBv4TIQmmlu705BcY/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №8</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Графики, задачи</h5>
+                                                                                    <a href="https://drive.google.com/drive/folders/10gzT6k0D2v2sgouOUq8HjWB5tJWkfcwG?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №11</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Графики, задачи</h5>
+                                                                                    <a href="https://drive.google.com/drive/folders/1Sg3J5eAGGjLUX8lLD9j12Z02UhhnfmAG?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Самостоятельная работа №1</div>
+                                                                                <div class="card-body">
+                                                                                    <a href="https://docs.google.com/document/d/1bLJjbjD3E-IyvMcSbRlX92fJy1G5P1OF56K9UTXXJGg/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Самостоятельная работа №2</div>
+                                                                                <div class="card-body">
+                                                                                    <a href="https://drive.google.com/drive/folders/1ptQdaiyHMH62TuHTqezk0Vu-zcHkVeyR?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Самостоятельная работа №4</div>
+                                                                                <div class="card-body">
+                                                                                    <a href="https://docs.google.com/document/d/11DTba84enV4GdS1p7Y798oXTYWy4-wRnP8RBSmcVl4A/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Доклад</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Первые статистические школы</h5>
+                                                                                    <a href="https://docs.google.com/presentation/d/1x4b1G23r8IlaRlqwKiN9U2biqKIbqMRQh-LJwrIfmV4/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingBuisInfo">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBuisInfo" aria-expanded="false" aria-controls="collapseBuisInfo">
+                                                                    Бизнес-информатика
+                                                              </button>
+                                                        </h2>
+                                                        <div id="collapseBuisInfo" class="accordion-collapse collapse" aria-labelledby="headingBuisInfo" data-bs-parent="#accordion2kursSem2">
+                                                            <div class="accordion-body">
+                                                                <div class="container" id="down">
+                                                                    <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №1</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Инструментальные средства BPwin 4.07</h5>
+                                                                                    <a href="https://docs.google.com/document/d/11h81MUyprst5TeV1_-fmB7f94YtObg7OpRl5judalJw/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №2</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Создание диаграммы декомпозиции</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1igdiNX9bOXxDF_t6fbPaU7szautnE4IXYeOiM9W9QDM/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №3</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Создание диаграммы узлов</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1PbjyJIAGQ4rviocWuMN6KW9mrGj-LQXfo5UtWK3kIDo/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №4</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Расщепление и слияние модели</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1yWzM_l9IxfKQ4-krFyC7RPkqSZPJa6DakWCvaNk3SL4/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №5</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Созданной модели процессов в виде организационных диаграмм DFD</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1MV2tcHbzW5rCCZ4NqPj86LSwUt1WOeloEyzGjaDLO28/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №6</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Создание модели информационных потоков в виде диаграмм Workflow (IDEF3)</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1fTi7iZrw2k0Zob1zexUrS2oKbHjrGIqLFPBTjXf01eI/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №7</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Создание организационных диаграмм и диаграмм Swim Lane</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1VjayAh1axZeEGJcu6Zs-HZFsZSyMYM2ezF4SsljVCfI/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №8</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Стоимостный анализ (Activity Based Costing)</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1rMts25pa3KZs48xdpm-42rTHz3dCtYRrMs7oq1mRbNk/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №9</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Создание модели TO-BE (реинжиниринг бизнес-процессов)</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1_TpMcPLWaEEWSXd0FgwBBERteh7JYrysiM_QiP2RzBg/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №10</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Создание отчетов в AllFusion PM</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1L3J7QXdafczQ5RMPHIkyZp1A4zts8C0fWnv4_AfK02g/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Дополнительное задание</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Тест по теме 6.5 Бизнес-инжиниринг</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1yUZTKQkj0FZBmtTyi_vYYN5he4hVgE8WztzpkzbCooo/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingMath3">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMath3" aria-expanded="false" aria-controls="collapseMath3">
+                                                                    Математика
+                                                              </button>
+                                                        </h2>
+                                                        <div id="collapseMath3" class="accordion-collapse collapse" aria-labelledby="headingMath3" data-bs-parent="#accordion2kursSem2">
+                                                            <div class="accordion-body">
+                                                                <div class="container" id="down">
+                                                                    <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Задание №1</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Аннотированный список ресурсов по теме "Производные"</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1mG2ugReLy6lkwDmG0dAMNRd4cmVA7bhWDq9WNwYl5EI/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Задание №2</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Глоссарий</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1F14HrB6QGdeu16OiMqCjjauoLsIpNaHTi1FLmei4UK0/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Задание №3</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Буклет с основными формаулами по теме "Производные"</h5>
+                                                                                    <a href="https://drive.google.com/file/d/1sUcorTMtU_C4bhNwFl0GBtldJXN0mSTF/view?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Задание №4</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Плакат "Алгоритмы решений по теме "Производные"</h5>
+                                                                                    <a href="https://drive.google.com/file/d/1oBhFC3HlvNcwKnFaovntQFVJ27iYr-rB/view?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Задание №6</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Применение производных в профессиональной деятельности</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1QwH5HY9pG8s9vmtmqH36fituEhVhQull_Mtj9lvVNVU/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Задание №7</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Применение производных при решении различных задач математики</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1GgEFiChep2qBKyG46CQ6cB2CHUXJuXDfpqH61ZLytt4/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion-item">
+                                                        <h2 class="accordion-header" id="headingCG">
+                                                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseCG" aria-expanded="false" aria-controls="collapseCG">
+                                                                    Компьютерная графика
+                                                              </button>
+                                                        </h2>
+                                                        <div id="collapseCG" class="accordion-collapse collapse" aria-labelledby="headingCG" data-bs-parent="#accordion2kursSem2">
+                                                            <div class="accordion-body">
+                                                                <div class="container" id="down">
+                                                                    <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Лабораторная работа №1-6</div>
+
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Рисование в Lazarus</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1ZEIBWMSN9daUkNVONUEdOJ5LRP1eloyMABBVphWiSL4/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Самостоятельная работа №1</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Основные понятия компьютерной графики</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1hsF-eb35NHKWIpQbO9BRR037kMGQUJAEYDk4TPE0vjw/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col">
+                                                                            <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                <div class="card-header">Самостоятельная работа №2</div>
+                                                                                <div class="card-body">
+                                                                                    <h5 class="card-title">Координатный метод</h5>
+                                                                                    <a href="https://docs.google.com/document/d/1LLcykKC4ISCX9wCRNRz4Lsb_6kjaIjozXOQcUKiN3rM/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="accordion" id="accordion2kursSem2">
+                                        <div class="accordion-item">
+                                            <h2 class="accordion-header" id="heading2kursSem2">
+                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2kursSem2" aria-expanded="false" aria-controls="collapse2kursSem2">
+                                      2 семестр
+                                    </button>
+                                            </h2>
+                                            <div id="collapse2kursSem2" class="accordion-collapse collapse" aria-labelledby="headingSem1" data-bs-parent="#accordion2kursSem2">
+                                                <div class="accordion-body">
+                                                    <div class="accordion" id="accordionVichMath">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingVichMath">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseVichMath" aria-expanded="false" aria-controls="collapseVichMath">
+                                                        Вычислительная математика
+                                                      </button>
+                                                            </h2>
+                                                            <div id="collapseVichMath" class="accordion-collapse collapse" aria-labelledby="headingVichMath" data-bs-parent="#accordionVichMath">
+                                                                <div class="accordion-body">
+                                                                    <div class="container" id="down">
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №1</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Кратные интегралы. Численное интегрирование</h5>
+                                                                                        <a href="https://drive.google.com/drive/folders/165j-PkRmKujy6vqHQqQGrGWldxvQyXF3?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №4</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Дифференциальные уравнения</h5>
+                                                                                        <a href="https://drive.google.com/drive/folders/1Knldd-JpGv8gdO-39xM8kHZfQv_pYXBP?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №5</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Элементарные функции</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1AQHjdM7nyTDR2AO70qi9ATS6h_MctjRu88Bh-j7tgoA/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №6</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Нелинейные уравнения</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1gDr_Bul23IGHm_elZOp51aGeoZNkizw-lKLqAZ29HKA/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion" id="accordionAnDan">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingAnDan">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseAnDan" aria-expanded="false" aria-controls="collapseAnDan">
+                                                        Анализ данных
+                                                      </button>
+                                                            </h2>
+                                                            <div id="collapseAnDan" class="accordion-collapse collapse" aria-labelledby="headingAnDan" data-bs-parent="#accordionAnDan">
+                                                                <div class="accordion-body">
+                                                                    <div class="container" id="down">
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №1</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Погрешности</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1x2CVJ1wh5zeevSqzO1UYeNZPrFEGpw_KVZx-5vMFptg/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №2</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Числовые характеристики ДСВ</h5>
+                                                                                        <a href="https://drive.google.com/drive/folders/1soJveGlobAgkKcjxHfzsw35l0vcacl3D?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №3</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Числовые характеристики НСВ</h5>
+                                                                                        <a href="https://drive.google.com/drive/folders/15HhrxriKy280MGDqSjatcW0cTPMY7TDb?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №4</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Задачи по вариационным рядам</h5>
+                                                                                        <a href="https://drive.google.com/drive/folders/1Jq7DzegYfGvTT1dDpqJvBdRO8rLkHJUt?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №5</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Средние величины</h5>
+                                                                                        <a href="https://drive.google.com/drive/folders/1lKX0_dke_z0KBKIfOG4CG3y8-YL0JQty?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №6</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Показатели вариации</h5>
+
+                                                                                        <a href="https://docs.google.com/spreadsheets/d/1m9dcAspq4rsJgxR04jn99piM9bZBv4TIQmmlu705BcY/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №8</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Графики, задачи</h5>
+                                                                                        <a href="https://drive.google.com/drive/folders/10gzT6k0D2v2sgouOUq8HjWB5tJWkfcwG?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №11</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Графики, задачи</h5>
+                                                                                        <a href="https://drive.google.com/drive/folders/1Sg3J5eAGGjLUX8lLD9j12Z02UhhnfmAG?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Самостоятельная работа №1</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://docs.google.com/document/d/1bLJjbjD3E-IyvMcSbRlX92fJy1G5P1OF56K9UTXXJGg/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Самостоятельная работа №2</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://drive.google.com/drive/folders/1ptQdaiyHMH62TuHTqezk0Vu-zcHkVeyR?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Самостоятельная работа №4</div>
+                                                                                    <div class="card-body">
+                                                                                        <a href="https://docs.google.com/document/d/11DTba84enV4GdS1p7Y798oXTYWy4-wRnP8RBSmcVl4A/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Доклад</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Первые статистические школы</h5>
+                                                                                        <a href="https://docs.google.com/presentation/d/1x4b1G23r8IlaRlqwKiN9U2biqKIbqMRQh-LJwrIfmV4/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion" id="accordionBuisInfo">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingBuisInfo">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseBuisInfo" aria-expanded="false" aria-controls="collapseBuisInfo">
+                                                            Бизнес-информатика
+                                                      </button>
+                                                            </h2>
+                                                            <div id="collapseBuisInfo" class="accordion-collapse collapse" aria-labelledby="headingBuisInfo" data-bs-parent="#accordionBuisInfo">
+                                                                <div class="accordion-body">
+                                                                    <div class="container" id="down">
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №1</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Инструментальные средства BPwin 4.07</h5>
+                                                                                        <a href="https://docs.google.com/document/d/11h81MUyprst5TeV1_-fmB7f94YtObg7OpRl5judalJw/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №2</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Создание диаграммы декомпозиции</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1igdiNX9bOXxDF_t6fbPaU7szautnE4IXYeOiM9W9QDM/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №3</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Создание диаграммы узлов</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1PbjyJIAGQ4rviocWuMN6KW9mrGj-LQXfo5UtWK3kIDo/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №4</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Расщепление и слияние модели</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1yWzM_l9IxfKQ4-krFyC7RPkqSZPJa6DakWCvaNk3SL4/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №5</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Созданной модели процессов в виде организационных диаграмм DFD</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1MV2tcHbzW5rCCZ4NqPj86LSwUt1WOeloEyzGjaDLO28/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №6</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Создание модели информационных потоков в виде диаграмм Workflow (IDEF3)</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1fTi7iZrw2k0Zob1zexUrS2oKbHjrGIqLFPBTjXf01eI/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №7</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Создание организационных диаграмм и диаграмм Swim Lane</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1VjayAh1axZeEGJcu6Zs-HZFsZSyMYM2ezF4SsljVCfI/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №8</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Стоимостный анализ (Activity Based Costing)</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1rMts25pa3KZs48xdpm-42rTHz3dCtYRrMs7oq1mRbNk/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №9</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Создание модели TO-BE (реинжиниринг бизнес-процессов)</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1_TpMcPLWaEEWSXd0FgwBBERteh7JYrysiM_QiP2RzBg/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Лабораторная работа №10</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Создание отчетов в AllFusion PM</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1L3J7QXdafczQ5RMPHIkyZp1A4zts8C0fWnv4_AfK02g/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Дополнительное задание</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Тест по теме 6.5 Бизнес-инжиниринг</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1yUZTKQkj0FZBmtTyi_vYYN5he4hVgE8WztzpkzbCooo/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="accordion" id="accordionMath3">
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header" id="headingMath3">
+                                                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseMath3" aria-expanded="false" aria-controls="collapseMath3">
+                                                            Математика
+                                                      </button>
+                                                            </h2>
+                                                            <div id="collapseMath3" class="accordion-collapse collapse" aria-labelledby="headingMath3" data-bs-parent="#accordionMath3">
+                                                                <div class="accordion-body">
+                                                                    <div class="container" id="down">
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Задание №1</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Аннотированный список ресурсов по теме "Производные"</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1mG2ugReLy6lkwDmG0dAMNRd4cmVA7bhWDq9WNwYl5EI/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Задание №2</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Глоссарий</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1F14HrB6QGdeu16OiMqCjjauoLsIpNaHTi1FLmei4UK0/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Задание №3</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Буклет с основными формаулами по теме "Производные"</h5>
+                                                                                        <a href="https://drive.google.com/file/d/1sUcorTMtU_C4bhNwFl0GBtldJXN0mSTF/view?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Задание №4</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Плакат "Алгоритмы решений по теме "Производные"</h5>
+                                                                                        <a href="https://drive.google.com/file/d/1oBhFC3HlvNcwKnFaovntQFVJ27iYr-rB/view?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Задание №6</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Применение производных в профессиональной деятельности</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1QwH5HY9pG8s9vmtmqH36fituEhVhQull_Mtj9lvVNVU/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                            <div class="col">
+                                                                                <div class="card text-white mb-3 h-100" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                                                                    <div class="card-header">Задание №7</div>
+                                                                                    <div class="card-body">
+                                                                                        <h5 class="card-title">Применение производных при решении различных задач математики</h5>
+                                                                                        <a href="https://docs.google.com/document/d/1GgEFiChep2qBKyG46CQ6cB2CHUXJuXDfpqH61ZLytt4/edit?usp=sharing" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading3kurs">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse3kurs" aria-expanded="false" aria-controls="collapse3kurs">
+                                3 курс
+                              </button>
+                            </h2>
+                            <div id="collapse3kurs" class="accordion-collapse collapse" aria-labelledby="heading3kurs" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="heading4kurs">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse4kurs" aria-expanded="false" aria-controls="collapse4kurs">
+                                4 курс
+                              </button>
+                            </h2>
+                            <div id="collapse4kurs" class="accordion-collapse collapse" aria-labelledby="heading4kurs" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div id="2-kurs-1-sem">
+                <h1>2 курс</h1>
+                <h2>1 семестр</h2>
+
+                <h3>Анализ данных</h3>
+
+                <hr>
+                <h3 id="buisness-inform">Бизнес-информатика</h3>
+
+                <hr>
+                <h3>Математика</h3>
+
+                <hr>
+            </div>
+            <h3>Прог</h3>
+            <div class="container" id="down">
+                <div class="row row-cols-4" style="margin-top: 5vh; margin-bottom: 5vh;">
+                    <div class="col">
+                        <div class="text-center">
+                            <div class="card text-white mb-3" style="max-width: 18rem; background-color:rgb(94, 28, 218); ">
+                                <div class="card-header">Лабораторная работа №2</div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Программирование, 6 семестр</h5>
+                                    <p class="card-text">Работа с математическими пакетами и csv-файлами</p>
+                                    <a href="https://repl.it/@AnastasiaTs/my-sem6-t1-lr1" target="_blank" class="btn text-white btn-outline-light" style="background-color: rgb(94, 28, 218);">Посмотреть</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
